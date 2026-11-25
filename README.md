@@ -10,9 +10,10 @@ Built with **React** (Frontend), **Python / FastAPI** (Backend), **LiteLLM**, an
 
 | Component | Status | URL |
 | :--- | :--- | :--- |
-| **Frontend UI** | Deployed | `https://your-frontend-domain.vercel.app` *(Update with your live URL)* |
-| **Backend API** | Deployed | `https://your-backend-api.onrender.com` *(Update with your live URL)* |
-| **Health Check** | Live | `https://your-backend-api.onrender.com/health` |
+| **GitHub Repository** | Public | `https://github.com/student-upescollege/llm-chatbot-failover-cache` |
+| **Frontend UI** | Deployed | `https://llm-chatbot-failover-cache.vercel.app` *(or your Vercel URL)* |
+| **Backend API** | Deployed | `https://llm-chatbot-failover-cache.onrender.com` *(or your Render URL)* |
+| **Health Check** | Live | `https://llm-chatbot-failover-cache.onrender.com/health` |
 | **Demo Video** | 2–3 min | `https://www.loom.com/share/...` *(Add your recording link)* |
 
 ---
@@ -247,3 +248,4 @@ curl -X GET http://localhost:8000/sessions/curl-s1/messages
 2. **Visual Cache & Latency Badges**: Each assistant reply includes color-coded badges highlighting cache hits in green (`LLM_CACHE`) and live calls in purple (`LIVE_INFERENCE`), accompanied by real millisecond timings.
 3. **Session Switcher & Reset**: A dedicated "+ New Chat" action instantly provisions a fresh session ID while keeping past SQLite session logs intact for auditing.
 4. **Full Automated Test Suite**: Built-in pytest suite (`backend/tests/test_api.py`) covering health checks, multi-turn dialogue, cache consistency, key failover hooks, 422 validations, and 404 session handling.
+
