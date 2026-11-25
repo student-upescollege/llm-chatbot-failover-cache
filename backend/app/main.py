@@ -72,6 +72,15 @@ async def generic_exception_handler(request: Request, exc: Exception):
         content={"detail": "internal server error"}
     )
 
+@app.get("/")
+def root():
+    return {
+        "status": "ok",
+        "service": "LLM Chatbot Gateway",
+        "health": "/health",
+        "docs": "/docs"
+    }
+
 @app.get("/health", response_model=HealthResponse)
 def health():
     """
